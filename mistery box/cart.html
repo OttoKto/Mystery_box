@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+  <title>MYSTERY BOX</title>
+  <link rel="stylesheet" type="text/css" href="assets/index.css">
+</head>
+<body>
+
+    
+     <div class="wrapper">
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+    </div>
+      <a href="index.html" class="MAIN">MYSTERY BOX</a>
+   <div class="cart" >
+  <a href="cart.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+      <path d="M19 7h-3V5.586c0-1.229-.993-2.214-2.214-2.214H9.214C7.993 3.372 7 4.357 7 5.586V7H4c-.552 0-1 .448-1 1v12c0 .552.448 1 1 1h14c.552 0 1-.448 1-1V8c0-.552-.448-1-1-1zm-8-1.414C11 5.134 11.448 5 12 5s1 .134 1 .586V7h-2V5.586zM17 19H7V9h10v10zm0-12H7v-2h10v2zm-6 6H9v-2h2v2z"/>
+    </svg>
+    <span id="CART">CART</span>
+  </a>
+</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="catalog.html" id="Catalog">Catalog</a></li>
+      <li><a href="information.html" id="Information">Information</a></li>
+      <li><a href="cart.html" id="Cart">Cart</a></li>
+      <li><a href="registration.html" id="Registration">Registration</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <!-- Placeholder for goods -->
+      
+      <div class="product new-product">
+  <span class="new-badge" id="new-badge">NEW!</span>
+  <img style="width: 200px; height: 200px;" src="assets/images/mystery_box1.png" alt="Product 3">
+  <h3 class="new-title">Premium Box</h3>
+  <p class="new-description" id="Description1">Description of Product 1</p>
+  <button class="new-button" id="Remove from Cart">Remove from Cart</button>
+</div>
+   
+       <button class="add btn-success" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" id="checkout">Checkout</button>
+  <!--Add more product blocks as needed -->
+  </div>
+
+         
+
+    </div>
+  <footer>
+    <div class="links">
+      <a href="ottopost@bk.ru">Email</a>
+      <a href="https://www.instagram.com/example">Instagram</a>
+      <a href="https://t.me/ottoctopussy">Telegram</a>
+      <span id="tel">Phone: +48734197926</span>
+    </div>
+       <div class="language-selection">
+    <button class="language-button" id="ru-button">RU</button>
+    <button class="language-button" id="en-button">EN</button>
+  </div>
+  </footer>
+    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="Checkout" id="exampleModalLabel">Checkout</h5>
+        </div>
+        <div class="modal-body">
+                <label for="phone" id="phone">Phone:</label>
+           <input type="text" id="phone" name="phone" required>
+
+      <label for="card-number" id="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" required>
+
+      <label for="address" id="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="full-name" id="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required>
+          <button type="submit" id="Confirm"class="Confirm">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <!-- Скрипты -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/list.min.js"></script>
+  <script src="js/main.js"></script>
+     <script>
+const ruButton = document.getElementById('ru-button');
+const enButton = document.getElementById('en-button');
+ruButton.addEventListener('click', setRussian);
+enButton.addEventListener('click', setEnglish);
+
+function setRussian() {
+  document.getElementById('Remove from Cart').innerText = 'Убрать из корзины';
+  document.getElementById('Catalog').innerText = 'Каталог';
+    document.getElementById('Information').innerText = 'Информация';
+    document.getElementById('Cart').innerText = 'Корзина';
+    document.getElementById('Registration').innerText = 'Регистрация';
+     document.getElementById('tel').innerText = 'Телефон: +375-29-99-43713';
+     document.getElementById('CART').innerText = 'КОРЗИНА';
+     document.getElementById('Description1').innerText = 'Описание товара 1';
+    document.getElementById('new-badge').innerText = 'НОВИНКА!';
+    document.getElementById('checkout').innerText = 'Оформить заказ';
+    
+    
+    document.getElementById('exampleModalLabel').innerText = 'Оформить заказ';
+    document.getElementById('phone').innerText = 'Телефон:';
+    document.getElementById('card-number').innerText = 'Номер карты:';
+    document.getElementById('address').innerText = 'Адрес';
+    document.getElementById('full-name').innerText = 'ФИО:';
+    document.getElementById('Confirm').innerText = 'Подвертдить';
+}
+
+function setEnglish() {
+  document.getElementById('Remove from Cart').innerText = 'Remove from Cart';
+  document.getElementById('Catalog').innerText = 'Catalog';
+       document.getElementById('Information').innerText = 'Information';
+    document.getElementById('Cart').innerText = 'Cart';
+    document.getElementById('Registration').innerText = 'Registration';
+    document.getElementById('tel').innerText = 'Phone: +375-29-99-43713';
+    document.getElementById('CART').innerText = 'CART';
+    document.getElementById('Description1').innerText = 'Description of Product 1';
+    document.getElementById('new-badge').innerText = 'NEW!';
+         document.getElementById('checkout').innerText = 'Checkout';
+    
+    
+    document.getElementById('exampleModalLabel').innerText = 'Checkout';
+    document.getElementById('phone').innerText = 'Phone:';
+    document.getElementById('card-number').innerText = 'Сard Number:';
+    document.getElementById('address').innerText = 'Address:';
+    document.getElementById('full-name').innerText = 'Full Name:';
+    document.getElementById('Confirm').innerText = 'Confirm';
+}
+         
+         
+         
+
+         
+         
+    </script>
+   
+</body>
+</html>

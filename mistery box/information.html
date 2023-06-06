@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MYSTERY BOX</title>
+  <link rel="stylesheet" type="text/css" href="assets/index.css">
+</head>
+<body>
+     <div class="wrapper">
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+    </div>
+        <a href="index.html" class="MAIN">MYSTERY BOX</a>
+   <div class="cart">
+  <a href="cart.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M19 7h-3V5.586c0-1.229-.993-2.214-2.214-2.214H9.214C7.993 3.372 7 4.357 7 5.586V7H4c-.552 0-1 .448-1 1v12c0 .552.448 1 1 1h14c.552 0 1-.448 1-1V8c0-.552-.448-1-1-1zm-8-1.414C11 5.134 11.448 5 12 5s1 .134 1 .586V7h-2V5.586zM17 19H7V9h10v10zm0-12H7v-2h10v2zm-6 6H9v-2h2v2z"/>
+    </svg>
+    <span id="CART">CART</span>
+  </a>
+</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="catalog.html" id="Catalog">Catalog</a></li>
+      <li><a href="information.html" id="Information">Information</a></li>
+      <li><a href="cart.html" id="Cart">Cart</a></li>
+      <li><a href="registration.html"id="Registration">Registration</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2 id="information-heading">Information</h2>
+  <p id="information-description">Welcome to the Information page of our Mystery Box store. Here, you can find all the important details about our products, services, and policies.</p>
+  <ul>
+    <li id="product-faqs">Product FAQs: Find answers to commonly asked questions about our products, their features, and usage.</li>
+    <li id="shipping-info">Shipping and Delivery Information: Learn about our shipping methods, estimated delivery times, and tracking options.</li>
+    <li id="return-policy">Return and Refund Policy: Understand our policy on returns, exchanges, and refunds for purchased items.</li>
+    <li  id="contact-us">Contact Us: If you have any further inquiries or need assistance, please don't hesitate to reach out to our customer support team.</li>
+  </ul>
+  </div>
+
+  <footer>
+    <div class="links">
+      <a href="ottopost@bk.ru">Email</a>
+      <a href="https://www.instagram.com/example">Instagram</a>
+      <a href="https://t.me/ottoctopussy">Telegram</a>
+      <span id="tel">Phone: +48734197926</span>
+    </div>
+        <div class="language-selection">
+    <button class="language-button" id="ru-button">RU</button>
+    <button class="language-button" id="en-button">EN</button>
+  </div>
+  </footer>
+    </div>
+         <script>
+const ruButton = document.getElementById('ru-button');
+const enButton = document.getElementById('en-button');
+ruButton.addEventListener('click', setRussian);
+enButton.addEventListener('click', setEnglish);
+
+function setRussian() {
+  document.getElementById('Catalog').innerText = 'Каталог';
+    document.getElementById('Information').innerText = 'Информация';
+    document.getElementById('Cart').innerText = 'Корзина';
+    document.getElementById('Registration').innerText = 'Регистрация';
+     document.getElementById('tel').innerText = 'Телефон: +375-29-99-43713';
+     document.getElementById('CART').innerText = 'КОРЗИНА';
+    document.getElementById('information-heading').innerText = 'Информация';
+     document.getElementById('information-description').innerText = 'Добро пожаловать на страницу информации нашего магазина Mystery Box. Здесь вы можете найти все важные детали о наших товарах, услугах и политиках.';
+     document.getElementById('product-faqs').innerText = 'Часто задаваемые вопросы о товарах: Найдите ответы на часто задаваемые вопросы о наших товарах, их особенностях и использовании.';
+     document.getElementById('shipping-info').innerText = 'Информация о доставке: Узнайте о наших методах доставки, предполагаемых сроках доставки и возможностях отслеживания.';
+    document.getElementById('return-policy').innerText = 'Политика возврата и возврата средств: Познакомьтесь с нашей политикой в отношении возвратов, обмена товаров и возврата денег.';
+    document.getElementById('contact-us').innerText = 'Свяжитесь с нами: Если у вас возникли дополнительные вопросы или вам нужна помощь, не стесняйтесь обратиться к нашей службе поддержки клиентов.';
+    
+}
+
+function setEnglish() {
+  document.getElementById('Catalog').innerText = 'Catalog';
+       document.getElementById('Information').innerText = 'Information';
+    document.getElementById('Cart').innerText = 'Cart';
+    document.getElementById('Registration').innerText = 'Registration';
+    document.getElementById('tel').innerText = 'Phone: +375-29-99-43713';
+    document.getElementById('CART').innerText = 'CART';
+    document.getElementById('information-heading').innerText = 'Information';
+     document.getElementById('information-description').innerText = 'Welcome to the Information page of our Mystery Box store. Here, you can find all the important details about our products, services, and policies.';
+     document.getElementById('product-faqs').innerText = 'Product FAQs: Find answers to commonly asked questions about our products, their features, and usage.';
+     document.getElementById('shipping-info').innerText = 'Shipping and Delivery Information: Learn about our shipping methods, estimated delivery times, and tracking options.';
+    document.getElementById('return-policy').innerText = 'Return and Refund Policy: Understand our policy on returns, exchanges, and refunds for purchased items.';
+    document.getElementById('contact-us').innerText = 'Contact Us: If you have any further inquiries or need assistance, please don\'t hesitate to reach out to our customer support team.';
+}
+    </script>
+</body>
+</html>

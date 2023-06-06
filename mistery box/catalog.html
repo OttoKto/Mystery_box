@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MYSTERY BOX</title>
+  <link rel="stylesheet" type="text/css" href="assets/catalog%20.css">
+</head>
+<body>
+     <div class="wrapper">
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+    </div>
+        <a href="index.html" class="MAIN">MYSTERY BOX</a>
+   <div class="cart">
+  <a href="cart.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M19 7h-3V5.586c0-1.229-.993-2.214-2.214-2.214H9.214C7.993 3.372 7 4.357 7 5.586V7H4c-.552 0-1 .448-1 1v12c0 .552.448 1 1 1h14c.552 0 1-.448 1-1V8c0-.552-.448-1-1-1zm-8-1.414C11 5.134 11.448 5 12 5s1 .134 1 .586V7h-2V5.586zM17 19H7V9h10v10zm0-12H7v-2h10v2zm-6 6H9v-2h2v2z"/>
+    </svg>
+   <span id="CART">CART</span>
+  </a>
+</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="catalog.html" id="Catalog">Catalog</a></li>
+      <li><a href="information.html" id="Information">Information</a></li>
+      <li><a href="cart.html" id="Cart">Cart</a></li>
+      <li><a href="registration.html" id="Registration">Registration</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <!-- Placeholder for goods -->
+    <div class="product">
+      <img  style="width: 200px; height: 200px;" src="assets/images/mys1.png" alt="Product 1">
+      <h3>food box</h3>
+      <p id="Description of Product 1">Description of Product 1</p>
+      <button id="Add to Cart">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img style="width: 200px; height: 200px;" src="assets/images/mys3.png" alt="Product 2">
+      <h3>ultimate box</h3>
+      <p id="Description of Product 2">Description of Product 2</p>
+      <button id="Add to Cart1">Add to Cart</button>
+    </div>
+      
+       <div class="product">
+      <img style="width: 200px; height: 200px;" src="assets/images/mys2.png" alt="Product 3">
+      <h3>ultimate box2</h3>
+      <p id="Description of Product 3">Description of Product 3</p>
+      <button id="Add to Cart2">Add to Cart</button>
+    </div>
+       <div class="product">
+      <img style="width: 200px; height: 200px;" src="assets/images/mystery_box1.png" alt="Product 4">
+      <h3>ultimate box3</h3>
+      <p id="Description of Product 4">Description of Product 4</p>
+      <button id="Add to Cart3">Add to Cart</button>
+    </div>
+       <div class="product">
+      <img style="width: 200px; height: 200px;" src="assets/images/mys3.png" alt="Product 2">
+      <h3>ultimate box</h3>
+      <p id="Description of Product 5">Description of Product 5</p>
+      <button id="Add to Cart4">Add to Cart</button>
+    </div>
+
+    <!-- Add more product blocks as needed -->
+  </div>
+
+  <footer>
+    <div class="links">
+      <a href="ottopost@bk.ru">Email</a>
+      <a href="https://www.instagram.com/example">Instagram</a>
+      <a href="https://t.me/ottoctopussy">Telegram</a>
+      <span  id="tel">Phone: +48734197926</span>
+    </div>
+        <div class="language-selection">
+    <button class="language-button" id="ru-button">RU</button>
+    <button class="language-button" id="en-button">EN</button>
+  </div>
+  </footer>
+    </div>
+         <script>
+const ruButton = document.getElementById('ru-button');
+const enButton = document.getElementById('en-button');
+ruButton.addEventListener('click', setRussian);
+enButton.addEventListener('click', setEnglish);
+
+function setRussian() {
+      
+       document.getElementById('Description of Product 1').innerText = 'Описание товара 1';
+       document.getElementById('Description of Product 2').innerText = 'Описание товара 2';
+       document.getElementById('Description of Product 3').innerText = 'Описание товара 3';
+       document.getElementById('Description of Product 4').innerText = 'Описание товара 4';
+     document.getElementById('Description of Product 5').innerText = 'Описание товара 5';
+     document.getElementById('Add to Cart').innerText = 'Добавить в корзину';
+     document.getElementById('Add to Cart2').innerText = 'Добавить в корзину';
+     document.getElementById('Add to Cart1').innerText = 'Добавить в корзину';
+  document.getElementById('Add to Cart3').innerText = 'Добавить в корзину';
+  document.getElementById('Add to Cart4').innerText = 'Добавить в корзину';
+  document.getElementById('Catalog').innerText = 'Каталог';
+    document.getElementById('Information').innerText = 'Информация';
+    document.getElementById('Cart').innerText = 'Корзина';
+    document.getElementById('Registration').innerText = 'Регистрация';
+     document.getElementById('tel').innerText = 'Телефон: +375-29-99-43713';
+     document.getElementById('CART').innerText = 'КОРЗИНА';
+    
+}
+
+function setEnglish() {
+       document.getElementById('Description of Product 1').innerText = 'Description of Product 1';
+       document.getElementById('Description of Product 2').innerText = 'Description of Product 2';
+       document.getElementById('Description of Product 3').innerText = 'Description of Product 3';
+       document.getElementById('Description of Product 4').innerText = 'Description of Product 4';
+     document.getElementById('Description of Product 5').innerText = 'Description of Product 5';
+     document.getElementById('Add to Cart').innerText = 'Add to Cart';
+     document.getElementById('Add to Cart2').innerText = 'Add to Cart';
+     document.getElementById('Add to Cart1').innerText = 'Add to Cart';
+  document.getElementById('Add to Cart3').innerText = 'Add to Cart';
+  document.getElementById('Add to Cart4').innerText = 'Add to Cart';
+  document.getElementById('Catalog').innerText = 'Catalog';
+       document.getElementById('Information').innerText = 'Information';
+    document.getElementById('Cart').innerText = 'Cart';
+    document.getElementById('Registration').innerText = 'Registration';
+    document.getElementById('tel').innerText = 'Phone: +375-29-99-43713';
+    document.getElementById('CART').innerText = 'CART';
+}
+    </script>
+</body>
+</html>
